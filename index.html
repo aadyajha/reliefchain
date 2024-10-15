@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giving Page</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div id="root"></div>
+    <script type="text/babel">
+        const MainSection = () => {
+            return (
+                <div 
+                    className="min-h-screen flex flex-col items-center justify-center bg-gray-100"
+                    style={{
+                        backgroundImage: "url('images.jpg')", // Reference your local image
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundAttachment: 'fixed',
+                    }}
+                >
+                    <nav className="w-full flex justify-between items-center p-4 bg-gray-100 bg-opacity-0">
+                        <img src="logo.png" alt="Logo" className="w-30 h-12" />
+                        <ul className="flex space-x-10 text-gray-700">
+                            <li><a href="#" className="hover:text-gray-900">Home</a></li>
+                            <li><a href="#" className="hover:text-gray-900">Why Us</a></li>
+                            <li><a href="#" className="hover:text-gray-900">Donate</a></li>
+                            <li><a href="#" className="hover:text-gray-900">About Us</a></li>
+                            <li><a href="#" className="hover:text-gray-900">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div className="flex flex-col md:flex-row items-center justify-center mt-16">
+                        <div className="w-80 h-100 rounded-lg overflow-hidden">
+                            <img src="card.png" alt="Card Image" className="w-full h-full object-cover" />
+                        </div>
+                        <div className="mt-8 md:mt-0 md:ml-16 text-center md:text-left">
+                            <h1 className="text-6xl font-bold text-gray-800 leading-tight">THE FUTURE <br /> OF <span className="text-orange-500">GIVING</span> <br />BEGINS.</h1>
+                            <div className="mt-8 flex justify-center md:justify-start space-x-4">
+                                <button className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 relative">
+                                    <span className="absolute left-4 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                        <i className="fas fa-arrow-right text-white"></i>
+                                    </span>
+                                    <span className="ml-8">LET'S DONATE</span>
+                                </button>
+                                <button className="text-gray-700 hover:text-gray-900">MORE DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col p-16 bg-white bg-opacity-0 min-h-screen items-center justify-center">
+                        <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">RAPID RELIEF - REAL IMPACT.</h1>
+                        <p className="mb-12 text-center text-gray-800">From Calamity to Relief, we're in this together. Join us on RELIEFCHAIN to help aid those in need instantly.</p>
+                        <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-8">
+                            <div className="bg-gray-200 bg-opacity-50 p-6 rounded-lg shadow-md w-72 text-center">
+                                <i className="fas fa-fire text-3xl text-orange-500 mb-4"></i>
+                                <h2 className="font-bold mb-2">Ignite Impact</h2>
+                                <p className="text-sm text-gray-600">Spark joy by sharing your cause and the positive impact it brings. Clearly express how contributing will make a significant impact.</p>
+                            </div>
+                            <div className="bg-gray-200 bg-opacity-50 p-6 rounded-lg shadow-md w-72 text-center">
+                                <i className="fas fa-bolt text-3xl text-orange-500 mb-4"></i>
+                                <h2 className="font-bold mb-2">Spread the Word</h2>
+                                <p className="text-sm text-gray-600">Leverage social media and online networks. Share your crowdfunding campaign swiftly across various platforms.</p>
+                            </div>
+                            <div className="bg-gray-200 bg-opacity-50 p-6 rounded-lg shadow-md w-72 text-center">
+                                <i className="fas fa-globe text-3xl text-orange-500 mb-4"></i>
+                                <h2 className="font-bold mb-2">Connect Globally</h2>
+                                <p className="text-sm text-gray-600">Build a strong social network. Encourage supporters to share the campaign within their local communities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col items-center justify-center min-h-[50vh] bg-white text-center bg-opacity-0">
+                        <p className="text-lg font-normal text-gray-700 mb-2">Be a part of our fundraisers with over</p>
+                        <p className="text-8xl font-bold text-black mb-2">24,567+</p>
+                        <p className="text-lg font-normal text-gray-700 mb-6">people from around the world joined</p>
+                        <button className="bg-orange-500 text-gray-800 font-medium py-2 px-4 rounded">Join Fundraisers Now!</button>
+                    </div>
+
+                    <div className="max-w-3xl mx-auto min-h-[50vh] mt-10">
+                        <h1 className="text-2xl font-bold mb-4">Frequently Asked Questions</h1>
+                        <div className="border-b border-gray-300 py-4 flex justify-between items-center">
+                            <span className="text-lg">How Can I Make A Donation?</span>
+                            <i className="fas fa-plus"></i>
+                        </div>
+                        <div className="border-b border-gray-300 py-4 flex justify-between items-center">
+                            <span className="text-lg">How Will My Donation Be Used?</span>
+                            <i className="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const Footer = () => {
+            return (
+                <footer 
+                    className="w-full flex flex-col items-center justify-center py-16 min-h-[60vh]"
+                    style={{
+                        backgroundImage: "url('footer.jpg')",
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                >
+                    <div className="text-white text-center">
+                        <h2 className="text-8xl font-bold mb-4 text-orange-500">RELIEFCHAIN</h2>
+                        <p className="text-lg">Crowdsourcing Compassion for a Stronger Tomorrow.</p>
+                    </div>
+                    <div className="mt-8 flex justify-center space-x-4">
+                        <button className="bg-transparent border-2 border-white text-white py-2 px-6 hover:bg-white hover:text-black transition rounded-full">SOCIALS</button>
+                        <button className="bg-transparent border-2 border-white text-white py-2 px-6 hover:bg-white hover:text-black transition rounded-full">DONATE</button>
+                        <button className="bg-transparent border-2 border-white text-white py-2 px-6 hover:bg-white hover:text-black transition rounded-full">CONTACT US</button>
+                    </div>
+                </footer>
+            );
+        };
+
+        const App = () => {
+            return (
+                <>
+                    <MainSection />
+                    <Footer />
+                </>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
